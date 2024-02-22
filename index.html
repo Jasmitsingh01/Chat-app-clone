@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATGWORLD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navigation">
+            <div class=" d-flex justify-content-between d-lg-none ">
+                <div>
+                    <button class=" bg-transparent border border-0 text-light fs-5 "><i
+                            class="fa-solid fa-arrow-left "></i></button>
+                </div>
+                <button class=" btn border border-light text-light join-btn">Join Group</button>
+            </div>
+            <div class="d-lg-flex justify-content-around align-items-center d-none">
+                <a href="#"><img src="images/logo-S2lIhR8K.svg" alt="logo" class="logo"></a>
+                <form class="d-flex  justify-content-center w-50">
+                    <button type="button" class=" rounded-full icon "><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Search for your favorite groups in ATG"
+                        class="rounded-pill py-2 px-5 w-50 ms-n3">
+
+                </form>
+                <button class="bg-transparent border-0 sing-up">Create account. <span class="text-primary me-2">It’s free!</span> <i class="fa-solid fa-caret-down"></i></button>
+                 <div>
+                    <button class="bg-transparent border-0 profile"><span><img src="images/profile-card-4.jpg" alt="profile" class=" card-profile"></span> Siddharth Goyal <i class="fa-solid fa-caret-down"></i></button>
+
+                 </div>
+            </div>
+            <div class=" form-singup" id="singup">
+                <div class="  z-2 bg-light main-form-area ">
+                    <button type="button" id="close" class="btn position-absolute bg-light z-3 ">X</button>
+                    <div class="alert alert-success text-center d-none d-lg-block" role="alert">
+                        Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼                 
+                    </div>
+                     <div class="w-100 p-3  d-flex flex-column flex-lg-row">
+                        <form class="w-50 mx-auto form">
+                            <h4 class="mb-3">Create Account</h4>
+                           <div class="d-flex">
+                             <input type="text" placeholder="First Name" class="input border ">
+                             <input type="text" placeholder="Last Name" class="input border">
+                           </div>
+                           <div>
+                            <input type="email" placeholder="Email" class="input border">
+                           </div>
+                           <div>
+                            <input type="password" placeholder="Password" class="input border">
+                           </div>
+                           <div class="mb-3">
+                            <input type="password" placeholder="Confirm Password" class="input border ">
+                           </div>
+                           <div class="mb-3 d-flex">
+                            <button class="submit rounded-pill bg-primary border-0 py-2 text-light">Create Account</button>
+                            <a href="#" class="text-dark d-lg-none text-end w-50 text-decoration-underline log" >or, Sign In</a>
+                           </div>
+                           <div class="mb-3">
+                            <button class="w-100 rounded border py-2 d-flex align-items-center justify-content-center"><span><img src="images/facebook.png" alt="facebook" class="icon-social"></span>Sign up with Facebook</button>
+                           </div>
+                           <div>
+                            <button class="w-100 rounded border py-2 d-flex align-items-center justify-content-center"><span><img src="images/google.png" alt="google" class="icon-social"></span>Sign up with Google</button>
+                           </div>
+                        </form>
+                        <div class="px-3 d-flex flex-column align-items-center form-two">
+                            <p class="align-self-end  d-none d-lg-block">Already have an account? <a href="#" class="log">Sign In</a> </p>
+                            <img src="images/signup.svg" alt="sing-up" class=" sing-up-img  d-none d-lg-block">
+                            <p class="text-center">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+
+                        </div>
+
+                     </div>
+                </div>
+            </div>
+            <div class="form-singup" id="login">
+                <div class="  z-2 bg-light main-form-area ">
+                    <button type="button" id="Loginclose" class="btn position-absolute bg-light z-3 ">X</button>
+                    <div class="alert alert-success text-center d-none d-lg-block" role="alert">
+                        Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼                 
+                    </div>
+                     <div class="w-100 p-3  d-flex flex-column flex-lg-row">
+                        <form class="w-50 mx-auto form">
+                            <h4 class="mb-3">Sign In</h4>
+                       
+                           <div>
+                            <input type="email" placeholder="Email" class="input border">
+                           </div>
+                           <div class="mb-3"> 
+                            <input type="password" placeholder="Password" class="input border">
+                           </div>
+                           
+                           <div class="mb-3 d-flex">
+                            <button class="submit rounded-pill bg-primary border-0 py-2 text-light">Sign In</button>
+                            <a href="#" class="text-dark d-lg-none text-end w-50 text-decoration-underline Sign" >or, Create Account</a>
+                           </div>
+                           <div class="mb-3">
+                            <button class="w-100 rounded border py-2 d-flex align-items-center justify-content-center"><span><img src="images/facebook.png" alt="facebook" class="icon-social"></span>Sign up with Facebook</button>
+                           </div>
+                           <div>
+                            <button class="w-100 rounded border py-2 d-flex align-items-center justify-content-center"><span><img src="images/google.png" alt="google" class="icon-social"></span>Sign up with Google</button>
+                           </div>
+                           <a href="#" class="text-center text-dark tc">Forgot Password?</a>
+
+                        </form>
+                        <div class="px-3 d-flex flex-column align-items-center form-two">
+                            <p class="align-self-end  d-none d-lg-block">Don’t have an account yet?<a href="#" class="Sign">Create new for free!</a>  </p>
+                            <img src="images/signup.svg" alt="sing-up" class=" sing-up-img  d-none d-lg-block">
+
+                        </div>
+
+                     </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section id="banner">
+            <div id="sub-heading">
+                <h2>Computer Engineering</h2>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+        </section>
+        <div>
+            <div class="wrapper">
+                <div id="menu-bar">
+                    <div class="d-flex w-100 justify-content-between d-lg-none">
+                        <p>Posts(368)</p>
+                        <select name="fiter" class="select-btn">
+                            <option value="#" selected>Filter: All</option>
+                            <option value="#" >Filter: All</option>
+
+                        </select>
+                    </div>
+                    <div class="d-lg-flex justify-content-between d-none w-100  border-bottom py-3">
+                        <ul class="d-flex justify-content-center ms-n3 ">
+                            <li class="me-3"><a href="#" class="tabs active">All Posts(32)</a></li>
+                            <li class="me-3"><a href="#" class="tabs">Article</a></li>
+                            <li class="me-3"><a href="#" class="tabs">Event</a></li>
+                            <li class="me-3"><a href="#" class="tabs">Education</a></li>
+                            <li class="me-3"><a href="#" class="tabs">Job</a></li>
+                        </ul>
+                        <div>
+                            <button class="select-btn rounded">Write a Post <span><i
+                                        class="fa-solid fa-caret-down"></i></span></button>
+                            <button class=" bg-primary rounded p-2 border-0 text-light join-btn">
+                                <span>
+                                    <svg width="22" height="13" viewBox="0 0 22 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.33333 5.16671H4.58333V2.41671H2.75V5.16671H0V7.00004H2.75V9.75004H4.58333V7.00004H7.33333V5.16671ZM16.5 6.08337C18.0217 6.08337 19.2408 4.85504 19.2408 3.33337C19.2408 1.81171 18.0217 0.583374 16.5 0.583374C16.2067 0.583374 15.9225 0.629207 15.6658 0.711707C16.1883 1.45421 16.4908 2.35254 16.4908 3.33337C16.4908 4.31421 16.1792 5.20337 15.6658 5.95504C15.9225 6.03754 16.2067 6.08337 16.5 6.08337ZM11.9167 6.08337C13.4383 6.08337 14.6575 4.85504 14.6575 3.33337C14.6575 1.81171 13.4383 0.583374 11.9167 0.583374C10.395 0.583374 9.16667 1.81171 9.16667 3.33337C9.16667 4.85504 10.395 6.08337 11.9167 6.08337ZM17.985 8.06337C18.7458 8.73254 19.25 9.58504 19.25 10.6667V12.5H22V10.6667C22 9.25504 19.8275 8.38421 17.985 8.06337ZM11.9167 7.91671C10.0833 7.91671 6.41667 8.83337 6.41667 10.6667V12.5H17.4167V10.6667C17.4167 8.83337 13.75 7.91671 11.9167 7.91671Z"
+                                            fill="white" />
+                                    </svg>
+                                </span> Join Group </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <section id="card-area">
+                        <div class="card">
+                            <img src="images/card-1.jpg" class="post-img" alt="post">
+                            <div class="card-body">
+                                <h6 class="card-sub-heading"><span class="post-icon">✍️</span>Article</h6>
+                                <div class=" d-flex justify-content-between align-items-start">
+                                    <h4 class="card-title">What if famous brands had regular fonts? Meet RegulaBrands!
+                                    </h4>
+                                    <div class="btn-group">
+                                        <button type="button" class="menu-btn " data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-start">
+                                            <li><button class="dropdown-item" type="button">Edit</button></li>
+                                            <li><button class="dropdown-item" type="button">Report</button></li>
+                                            <li><button class="dropdown-item" type="button">Option 3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade.F</p>
+                                <div class="d-flex justify-content-between align-items-center ">
+                                    <div class=" d-flex  align-items-center flex-grow-1">
+                                        <img src="images/profile-card.jpg" alt="profile-card" class="card-profile">
+                                        <div class="ms-2  d-lg-flex justify-content-between flex-grow-1 ">
+                                            <h5 class="profile-name">Sarthak Kamra</h5>
+                                            <p class="post-view"><span><i class="fa-regular fa-eye"></i></span>1.4k
+                                                views</p>
+                                        </div>
+                                    </div>
+                                    <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/card-2.jpg" class="post-img" alt="post">
+                            <div class="card-body">
+                                <h6 class="card-sub-heading"><span class="post-icon">🔬️
+                                    </span>Education</h6>
+                                <div class=" d-flex justify-content-between align-items-start">
+                                    <h4 class="card-title">Tax Benefits for Investment under National Pension Scheme
+                                        launched by Government</h4>
+                                    <div class="btn-group">
+                                        <button type="button" class="menu-btn " data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-start">
+                                            <li><button class="dropdown-item" type="button">Edit</button></li>
+                                            <li><button class="dropdown-item" type="button">Report</button></li>
+                                            <li><button class="dropdown-item" type="button">Option 3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I
+                                    plan to rei…</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class=" d-flex  align-items-center flex-grow-1">
+                                        <img src="images/profile-card-2.jpg" alt="profile-card" class="card-profile">
+                                        <div class="ms-2  d-lg-flex justify-content-between flex-grow-1 ">
+                                            <h5 class="profile-name">Sarah West</h5>
+                                            <p class="post-view"><span><i class="fa-regular fa-eye"></i></span>1.4k
+                                                views</p>
+                                        </div>
+                                    </div>
+                                    <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/card-3.jpg" class="post-img" alt="post">
+                            <div class="card-body">
+                                <h6 class="card-sub-heading"><span class="post-icon">
+                                        🗓️
+                                    </span> Meetup</h6>
+                                <div class=" d-flex justify-content-between align-items-start">
+                                    <h4 class="card-title">Finance & Investment Elite Social Mixer @Lujiazui</h4>
+                                    <div class="btn-group">
+                                        <button type="button" class="menu-btn " data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-start">
+                                            <li><button class="dropdown-item" type="button">Edit</button></li>
+                                            <li><button class="dropdown-item" type="button">Report</button></li>
+                                            <li><button class="dropdown-item" type="button">Option 3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class=" d-flex justify-content-between mb-2">
+                                        <p class="post-detail"><span class="post-icon"><i
+                                                    class="fa-solid fa-calendar-days"></i></span>Fri, 12 Oct, 2018</p>
+                                        <p class="post-detail"><span class="post-icon"><i
+                                                    class="fa-solid fa-location-dot"></i></span>Ahmedabad, India</p>
+                                    </div>
+                                    <a href="#" class=" btn w-100 border other-link">Visit Website</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class=" d-flex  align-items-center flex-grow-1">
+                                        <img src="images/profile-card-3.jpg" alt="profile-card" class="card-profile">
+                                        <div class="ms-2 d-lg-flex justify-content-between flex-grow-1 ">
+                                            <h5 class="profile-name">Ronal Jones</h5>
+                                            <p class="post-view"><span><i class="fa-regular fa-eye"></i></span> 1.4k
+                                                views</p>
+                                        </div>
+                                    </div>
+                                    <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-sub-heading"><span class="post-icon">
+                                        💼️
+                                    </span>Job</h6>
+                                <div class=" d-flex justify-content-between align-items-start">
+                                    <h4 class="card-title">Software Developer</h4>
+                                    <div class="btn-group">
+                                        <button type="button" class="menu-btn " data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-start">
+                                            <li><button class="dropdown-item" type="button">Edit</button></li>
+                                            <li><button class="dropdown-item" type="button">Report</button></li>
+                                            <li><button class="dropdown-item" type="button">Option 3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class=" d-flex justify-content-between mb-2">
+                                        <p class="post-detail"><span class="post-icon"><i
+                                                    class="fa-solid fa-bag-shopping"></i></span>Innovaccer Analytics
+                                            Private Ltd.</p>
+                                        <p class="post-detail"><span class="post-icon"><i
+                                                    class="fa-solid fa-location-dot"></i></span>Noida, India</p>
+                                    </div>
+                                    <a href="#" class=" btn w-100 border job-link">Apply on Timesjobs</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class=" d-flex  align-items-center flex-grow-1">
+                                        <img src="images/profile-card-4.jpg" alt="profile-card" class="card-profile">
+                                        <div class="ms-2  d-lg-flex justify-content-between flex-grow-1 ">
+                                            <h5 class="profile-name">Joseph Gray</h5>
+                                            <p class="post-view"><span><i class="fa-regular fa-eye"></i></span> 1.4k
+                                                views</p>
+                                        </div>
+                                    </div>
+                                    <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <aside id="sidebar">
+                       <form class="w-100 d-flex align-items-center mb-4">
+                        <span><i class="fa-solid fa-location-dot "></i></span>
+                        <input type="text" value="Noida, India" class="w-100 border-0  border-bottom mx-2 py-2 px-4">
+                        <button class=" border-0 ms-n3 bg-transparent"><i class="fa-solid fa-pencil"></i></button>
+                       </form>
+                       <div class=" d-flex  w-100 info mb-4">
+                        <span class=" me-2 ">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.33337 9.00004H7.66671V10.3334H6.33337V9.00004ZM6.33337 3.66671H7.66671V7.66671H6.33337V3.66671ZM6.99337 0.333374C3.31337 0.333374 0.333374 3.32004 0.333374 7.00004C0.333374 10.68 3.31337 13.6667 6.99337 13.6667C10.68 13.6667 13.6667 10.68 13.6667 7.00004C13.6667 3.32004 10.68 0.333374 6.99337 0.333374ZM7.00004 12.3334C4.05337 12.3334 1.66671 9.94671 1.66671 7.00004C1.66671 4.05337 4.05337 1.66671 7.00004 1.66671C9.94671 1.66671 12.3334 4.05337 12.3334 7.00004C12.3334 9.94671 9.94671 12.3334 7.00004 12.3334Z" fill="black"/>
+                            </svg>
+                            </span>
+                        <p>Your location will help us serve better and extend a personalised experience.</p>
+                       </div> 
+                       <div id="recommended">
+                        <div class="d-flex align-items-center mb-3 ">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <h4 class="ms-2 side-heding">Recommended Groups</h4>
+                         
+                           </div> 
+                           <div class="position-relative">
+                            <div class=" d-flex justify-content-between mb-4">
+                                <div class=" d-flex justify-content-around align-items-center">
+                                    <img src="images/side-profile-1.jpg" alt="profile-card" class="card-profile">
+                                    <p class=" ms-2 profile-name-side">Leisure</p>
+                                </div>
+                                <button class="bg-dark rounded-pill px-4 text-light follow-btn">Followed</button>
+                            </div>
+                            <div class=" d-flex justify-content-between mb-4">
+                                <div class=" d-flex justify-content-around align-items-center">
+                                    <img src="images/side-profile-2.jpg" alt="profile-card" class="card-profile">
+                                    <p class=" ms-2 profile-name-side">Activism</p>
+                                </div>
+                                <button class="bg-dark rounded-pill px-4 text-light follow-btn">Followed</button>
+                            </div>
+                            <div class=" d-flex justify-content-between mb-4">
+                                <div class=" d-flex justify-content-around align-items-center">
+                                    <img src="images/side-profile-3.jpg" alt="profile-card" class="card-profile">
+                                    <p class=" ms-2 profile-name-side">MBA</p>
+                                </div>
+                                <button class="bg-dark rounded-pill px-4 text-light follow-btn">Followed</button>
+                            </div>
+                            <div class=" d-flex justify-content-between mb-5">
+                                <div class=" d-flex justify-content-around align-items-center">
+                                    <img src="images/side-profile-4.jpg" alt="profile-card" class="card-profile">
+                                    <p class=" ms-2 profile-name-side">Philosophy</p>
+                                </div>
+                                <button class="bg-dark rounded-pill px-4 text-light follow-btn">Followed</button>
+                            </div>
+                             <a href="#" class=" position-absolute end-0 ">See More...</a>
+                        </div> 
+                       </div>                      
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

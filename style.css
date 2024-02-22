@@ -1,0 +1,488 @@
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login {
+    display: block !important;
+}
+
+#navigation {
+    padding: 16px 18px 16px 16px !important;
+}
+
+.logo {
+    width: 170px;
+    height: 24px;
+    object-fit: cover;
+}
+.profile{
+    display: none;
+}
+
+#banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('images/banner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 236px;
+    z-index: -1;
+}
+
+#banner::after {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.522);
+}
+
+#sub-heading {
+    position: absolute;
+    color: white;
+    bottom: 32px;
+    left: 16px;
+    z-index: 1;
+}
+
+#sub-heading h2 {
+    font-size: 17px;
+    line-height: 22.1px;
+    margin-bottom: 2px;
+}
+
+#sub-heading p {
+    font-size: 12px;
+    line-height: 15.6px;
+}
+
+#menu-bar {
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px 16px 16px !important;
+    margin-bottom: 5px;
+}
+
+#filter-bar p {
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: bold;
+}
+
+.select-btn {
+    width: 106px;
+    padding: 5px;
+    background-color: #f3f5f7;
+    font-size: 13px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+    border: none;
+    outline: none;
+}
+
+.form-two {
+    width: 100%;
+}
+
+.submit {
+    width: 50%;
+}
+
+.form-singup {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: -100%;
+    right: -100%;
+    z-index: 2;
+}
+
+.form-singup::before {
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.545);
+    content: "";
+}
+
+#close {
+    top: 0px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+#Loginclose {
+    top: 0px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.main-form-area {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sing-up-img {
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.tc {
+    display: inline-block !important;
+    width: 100%;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+.input {
+    padding: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+    margin: 5px !important;
+    object-fit: cover;
+}
+
+.sing-up {
+    color: #2E2E2E;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: bold;
+}
+
+#card-area {
+    position: relative;
+    top: 180px;
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 6px !important;
+    border-radius: 0px !important;
+
+}
+
+.card-body {
+    padding: 16px 18px 10px 16px !important;
+
+}
+
+.post-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-sub-heading {
+    font-size: 14px;
+    line-height: 18.2px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.post-icon {
+    vertical-align: text-bottom;
+    margin-right: 5px !important;
+}
+
+.card-title {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin-bottom: 10px !important;
+}
+
+.card-text {
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    margin-bottom: 10px !important;
+}
+
+.other-link {
+    font-size: 13px;
+    text-align: center;
+    color: #E56135;
+}
+
+.card-profile {
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 13px;
+}
+
+.post-view {
+    font-size: 12px;
+    margin-right: 10px !important;
+}
+
+.post-detail {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    font-weight: 600;
+}
+
+.menu-btn {
+    font-size: 16px;
+    background: transparent !important;
+    border: none;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.job-link {
+    color: #02B875;
+    font-size: 13px;
+}
+
+.share-btn {
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    background-color: #F1F3F5;
+}
+
+.dropdown-menu.show {
+    transform: translate3d(-150px, 30px, 0) !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ms-n3 {
+    margin-left: -23px !important;
+}
+
+.icon {
+    z-index: 1;
+    border: none;
+    background: transparent;
+}
+
+#sidebar {
+    display: none;
+    min-width: 300px;
+}
+
+#sidebar input {
+    outline: none;
+}
+
+.info {
+    font-size: 12px;
+    padding-right: 100px;
+}
+
+.side-heding {
+    font-size: 14px;
+}
+
+.follow-btn {
+    font-size: 12px;
+    border: none;
+}
+
+.profile-name-side {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.follow-btn:hover {
+    color: black !important;
+    background-color: #EDEEF0 !important;
+}
+
+.select {
+    background-color: #EDEEF0;
+}
+
+.form {
+    min-width: 300px;
+}
+
+#recommended {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+
+    #navigation {
+        padding-block: 12px !important;
+    }
+
+    #banner {
+        position: relative;
+        min-height: 440px;
+    }
+
+    #sub-heading {
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    #sub-heading h2 {
+        font-size: 36px;
+        line-height: 46.8px;
+    }
+
+    #sub-heading p {
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+
+    #menu-bar {
+        top: 0;
+    }
+
+    #card-area {
+        top: 0;
+        width: 692px;
+    }
+
+    #menu-bar {
+        padding: 0 200px;
+    }
+
+    .wrapper {
+        padding: 0 100px;
+    }
+
+    .tabs {
+        padding-bottom: 36px;
+        border-bottom: 2px solid transparent;
+        transition: border 1s ease-in-out;
+        color: #8A8A8A;
+
+    }
+
+    .tabs:hover {
+        border-bottom: 2px solid black;
+    }
+
+    .active {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+
+    }
+
+    .select-btn {
+        width: fit-content;
+        padding: 9px 12px;
+        background-image: none;
+        font-size: 16px;
+        text-wrap: nowrap;
+    }
+
+    .card-title {
+        width: 75%;
+        font-size: 22px;
+        line-height: 29.52px;
+    }
+
+    .card-text {
+        font-size: 19px;
+        line-height: 25.49px;
+    }
+
+    .card-sub-heading {
+        font-size: 18px;
+        line-height: 23.4px;
+        margin-bottom: 8px !important;
+    }
+
+    .profile-name {
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+
+    .post-view {
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+
+    .share-btn {
+        font-size: 0;
+    }
+
+    .fa-share-nodes {
+        font-size: 20px !important;
+        padding: 5px;
+
+    }
+
+    #sidebar {
+        display: block;
+        margin-left: 30px !important;
+    }
+
+    .main-form-area {
+        top: 100px;
+        bottom: unset;
+        max-width: 736px;
+    }
+
+    .tc {
+        font-size: 14px;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    #close {
+        top: -50px;
+        right: 0;
+    }
+
+    #Loginclose {
+        top: -50px;
+        right: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .wrapper {
+        padding: 0 200px;
+    }
+
+    #sidebar {
+        margin-left: 100px !important;
+    }
+}
